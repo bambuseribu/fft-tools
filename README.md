@@ -7,14 +7,6 @@
 ## Original author of this project is man who say himself as "CCOCOT". He deleted his own repository, then several members of SGBTeam are taking care of development and new features. And this is collection of several developments that have been carried out so far.
 <br/>
 
-  ____                  _            _____           _ _           
- |  _ \                | |          / ____|         (_) |          
- | |_) | __ _ _ __ ___ | |__  _   _| (___   ___ _ __ _| |__  _   _ 
- |  _ < / _` | '_ ` _ \| '_ \| | | |\___ \ / _ \ '__| | '_ \| | | |
- | |_) | (_| | | | | | | |_) | |_| |____) |  __/ |  | | |_) | |_| |
- |____/ \__,_|_| |_| |_|_.__/ \__,_|_____/ \___|_|  |_|_.__/ \__,_|
-                                                                   
-                                                                
 
 ## How to install (DEFAULT or BASIC USAGE)
 	* git clone https://github.com/bambuseribu/fft-tools/
