@@ -83,7 +83,7 @@ const Excute = async function(User, sleep){
                     const doLike = await Like(doLogin.session, media);
                     console.log(chalk`[{bold.green Username:}] ${media.params.user.username}\n[{cyan ${media.id}}] => [${doLike}]`);
                 }))
-                await console.log(chalk`{yellow \n [#][>] Delay For ${sleep} MiliSeconds [<][#] \n}`);
+                await console.log(chalk`{yellow \n [#][>][{cyan Account: ${User.username}}] Delay For ${sleep} MiliSeconds [<][#] \n}`);
                 await delay(sleep);
             }
         } while(feed.isMoreAvailable());
