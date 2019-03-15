@@ -77,7 +77,7 @@ const Media = async function(session, id){
 	}
 }
 
-const Delete = async function(session, id){
+const Delete = async function(sessio, id){
 	try {
 		await Client.Media.delete(session,id);
 		return true;
