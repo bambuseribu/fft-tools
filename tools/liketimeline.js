@@ -73,6 +73,8 @@ const Excute = async function(User, sleep){
         const doLogin = await Login(User);
         console.log(chalk`{green [!] Login Succsess}, {yellow [?] Try Like All Media in Feed / Timeline . . .\n}`);
         const feed = new Client.Feed.Timeline(doLogin.session);
+        var timeNow = new Date();
+        timeNow = `${timeNow.getHours()}:${timeNow.getMinutes()}:${timeNow.getSeconds()}`
         var cursor;
         do {
             if (cursor) feed.setCursor(cursor);
@@ -83,7 +85,7 @@ const Excute = async function(User, sleep){
                     const doLike = await Like(doLogin.session, media);
                     console.log(chalk`[{bold.green Username:}] ${media.params.user.username}\n[{cyan ${media.id}}] => [${doLike}]`);
                 }))
-                await console.log(chalk`{yellow \n [#][>][{cyan Account: ${User.username}}] Delay For ${sleep} MiliSeconds [<][#] \n}`);
+                await console.log(chalk`[{magenta ${timeNow}}] {yellow \n [#][>][{cyan Account: ${User.username}}] Delay For ${sleep} MiliSeconds [<][#] \n}`);
                 await delay(sleep);
             }
         } while(feed.isMoreAvailable());
